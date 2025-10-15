@@ -1,5 +1,5 @@
 -- User table
-CREATE TABLE IF NOT EXISTS user (
+CREATE TABLE IF NOT EXISTS `user` (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(50) NOT NULL UNIQUE,
     password VARCHAR(100) NOT NULL,
@@ -13,5 +13,5 @@ CREATE TABLE IF NOT EXISTS user (
 );
 
 -- Insert test data
-INSERT INTO user (username, password, real_name, id_card, phone, email, status) 
+INSERT INTO `user` (username, password, real_name, id_card, phone, email, status) 
 VALUES ('test', '098f6bcd4621d373cade4e832627b4f6', '测试用户', '110101199001011234', '13800138000', 'test@example.com', 1);
